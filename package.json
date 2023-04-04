@@ -1,11 +1,11 @@
 {
-  "name": "gulp-builder",
+  "name": "jewellery",
   "version": "1.0.0",
-  "description": "gulp-builder for web-development",
+  "description": "jewellery online store",
   "main": "index.js",
   "author": "ilyachever",
   "license": "ISC",
-  "homepage": "https://github.com/ilyachever/repository_name",
+  "homepage": "https://github.com/ilyachever/jewellery",
   "type": "module",
   "devDependencies": {
     "@babel/core": "^7.21.3",
