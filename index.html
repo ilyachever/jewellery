@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Описание сайта.">
+  <link rel="apple-touch-icon" href="./images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/CormorantGaramond-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="./scripts/index.js"></script>
+  <title>Jewellery</title>
+</head>
+
+<body class="page">
+  <!-- Header -->
+  <header class="header">
+  <div class="header__container">
+    <!-- Menu -->
+    <div class="header__menu">
+      <!-- Search -->
+      <div class="header__search search">
+        <input class="search__input" type="search" aria-label="Site Search." placeholder="Type here to search">
+        <button class="search__button" type="button" aria-label="Find a query.">
+          <svg class="search__icon" aria-hidden="true" focusable="false" fill="currentColor">
+            <use xlink:href="images/sprite/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Burger -->
+      <button class="header__burger" aria-label="Open navigation.">
+        <span class="header__burger-decoration"></span>
+      </button>
+      <!-- Logo -->
+      <a class="header__logo">
+        <svg fill="currentColor" role="img" aria-label="Beautiful logo of ours company." height="52" width="52">
+          <use xlink:href="images/sprite/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <!-- User menu -->
+      <div class="header__user">
+        <!-- Login -->
+        <button class="header__login" aria-label="Login to account." type="button">Login</button>
+        <!-- Cart -->
+        <a class="header__cart" href="./catalog.html" aria-label="Go to your cart.">
+          <span class="header__cart-link">Cart</span>
+          <svg class="header__cart-icon" width="20" height="18" viewBox="0 0 20 18" aria-hidden="true" focusable="false"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14 5C14 6.06087 13.5786 7.07828 12.8284 7.82843C12.0783 8.57857 11.0609 9 10 9C8.93913 9 7.92172 8.57857 7.17157 7.82843C6.42143 7.07828 6 6.06087 6 5M1 1H19V17H1V1Z"
+              stroke="#1D1613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="nav" title="Navigation">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#new">What’s new</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./catalog.html">Chokers</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./catalog.html">Necklaces</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./catalog.html">Rings</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./catalog.html">Earrings</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- About Information -->
+    <ul class="header__info" title="About us">
+      <li class="header__info-item">
+        <a class="header__info-link" href="./about.html">About CH</a>
+      </li>
+      <li class="header__info-item">
+        <a class="header__info-link" href="./about.html">Stores & Hours</a>
+      </li>
+      <li class="header__info-item">
+        <a class="header__info-link" href="./about.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero">
+  <div class="hero__container">
+    <h1 class="visually-hidden">Online Jewelry store.</h1>
+    <div class="hero__about">
+      <p class="hero__title">PERFECTION</p>
+      <p class="hero__description">made to be yours</p>
+    </div>
+  </div>
+</section>
+    <!-- New In -->
+    <section class="new" id="new">
+  <div class="new__container">
+
+    <header class="new__header">
+      <button class="new__button new__button--prev" type="button" aria-label="Show show pre-existing products.">
+        <svg class="new__button-arrow">
+          <use xlink:href="./images/sprite/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+      <div class="new__header-description">
+        <h2 class="new__title title">New In</h2>
+        <a class="link" href="./catalog.html" target="_blank">Shop Now</a>
+      </div>
+      <button class="new__button new__button--next" type="button" aria-label="Show the following products.">
+        <svg class="new__button-arrow new__button-arrow--reversed">
+          <use xlink:href="./images/sprite/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+    </header>
+
+    <ul class="new__slider slider">
+      <!-- Necklace -->
+      <li class="slider__item">
+        <a class="slider__link" href="#">
+          <article class="slider__article">
+            <figure class="slider__figure">
+              <picture>
+                <source media="(min-width: 1360px)"
+                  srcset="./images/new/necklace--desktop.webp, ./images/new/necklace--desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 767px)"
+                  srcset="./images/new/necklace--tablet.webp, ./images/new/necklace--tablet@2x.webp 2x"
+                  type="image/webp">
+                <source srcset="./images/new/necklace.webp, ./images/new/necklace@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1360px)"
+                  srcset="./images/new/necklace--desktop.jpg, ./images/new/necklace--desktop@2x.jpg 2x">
+                <source media="(min-width: 767px)"
+                  srcset="./images/new/necklace--tablet.jpg, ./images/new/necklace--tablet@2x.jpg 2x">
+                <img class="slider__image" loading="lazy" src="./images/new/necklace.jpg"
+                  srcset="./images/new/necklace@2x.jpg 2x" width="130" height="136"
+                  alt="Necklace with beautiful purple amethyst." />
+              </picture>
+              <h3 class="slider__title">Necklace with amethyst</h3>
+            </figure>
+            <b class="slider__price">$ 145</b>
+          </article>
+        </a>
+      </li>
+
+      <!-- Choker -->
+      <li class="slider__item">
+        <a class="slider__link" href="#">
+          <article class="slider__article">
+            <figure class="slider__figure">
+              <picture>
+                <source media="(min-width: 1360px)"
+                  srcset="./images/new/choker--desktop.webp, ./images/new/choker--desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 767px)"
+                  srcset="./images/new/choker--tablet.webp, ./images/new/choker--tablet@2x.webp 2x" type="image/webp">
+                <source srcset="./images/new/choker.webp, ./images/new/choker@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1360px)"
+                  srcset="./images/new/choker--desktop.jpg, ./images/new/choker--desktop@2x.jpg 2x">
+                <source media="(min-width: 767px)"
+                  srcset="./images/new/choker--tablet.jpg, ./images/new/choker--tablet@2x.jpg 2x">
+                <img class="slider__image" loading="lazy" src="./images/new/choker.jpg"
+                  srcset="./images/new/choker@2x.jpg 2x" width="130" height="136"
+                  alt="Black layered choker with triangular pendant." />
+              </picture>
+              <h3 class="slider__title">Layered сhoker</h3>
+            </figure>
+            <b class="slider__price">$ 115</b>
+          </article>
+        </a>
+      </li>
+
+      <!-- Chain -->
+      <li class="slider__item">
+        <a class="slider__link" href="#">
+          <article class="slider__article">
+            <figure class="slider__figure">
+              <picture>
+                <source media="(min-width: 1360px)"
+                  srcset="./images/new/chain--desktop.webp, ./images/new/chain--desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 767px)"
+                  srcset="./images/new/chain--tablet.webp, ./images/new/chain--tablet@2x.webp 2x" type="image/webp">
+                <source srcset="./images/new/chain.webp, ./images/new/chain@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1360px)"
+                  srcset="./images/new/chain--desktop.jpg, ./images/new/chain--desktop@2x.jpg 2x">
+                <source media="(min-width: 767px)"
+                  srcset="./images/new/chain--tablet.jpg, ./images/new/chain--tablet@2x.jpg 2x">
+                <img class="slider__image" loading="lazy" src="./images/new/chain.jpg"
+                  srcset="./images/new/chain@2x.jpg 2x" width="130" height="136"
+                  alt="Golden chain with pedant." />
+              </picture>
+              <h3 class="slider__title">Golden chain</h3>
+            </figure>
+            <b class="slider__price">$ 215</b>
+          </article>
+        </a>
+      </li>
+
+      <!-- Earrings -->
+      <li class="slider__item">
+        <a class="slider__link" href="#">
+          <article class="slider__article">
+            <figure class="slider__figure">
+              <picture>
+                <source media="(min-width: 1360px)"
+                  srcset="./images/new/earrings--desktop.webp, ./images/new/earrings--desktop@2x.webp 2x" type="image/webp">
+                <source srcset="./images/new/earrings.webp, ./images/new/earrings@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1360px)"
+                  srcset="./images/new/earrings--desktop.jpg, ./images/new/earrings--desktop@2x.jpg 2x">
+                <img class="slider__image" loading="lazy" src="./images/new/earrings.jpg"
+                  srcset="./images/new/earrings@2x.jpg 2x" width="130" height="136"
+                  alt="Two beautiful earrings with galaxy inside." />
+              </picture>
+              <h3 class="slider__title">Galaxy earrings</h3>
+            </figure>
+            <b class="slider__price">$ 95</b>
+          </article>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</section>
+    <!-- Blog -->
+    <section class="blog">
+  <div class="blog__container">
+    <div class="blog__header">
+      <h2 class="blog__title title">Blog</h2>
+      <a class="link" href="./blog.html" target="_blank" rel="noopener">Read All</a>
+    </div>
+
+    <ul class="blog__list" title="List of articles">
+      <li class="blog__item">
+        <article class="article">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/blog/article-1--desktop.webp, ./images/blog/article-1--desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 767px)" srcset="./images/blog/article-1--tablet.webp, ./images/blog/article-1--tablet@2x.webp 2x" type="image/webp">
+            <source srcset="./images/blog/article-1.webp, ./images/blog/article-1@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/blog/article-1--desktop.jpg, ./images/blog/article-1--desktop@2x.jpg 2x">
+            <source media="(min-width: 767px)" srcset="./images/blog/article-1--tablet.jpg, ./images/blog/article-1--tablet@2x.jpg 2x">
+            <img 
+            class="article__image" 
+            loading="lazy" 
+            src="./images/blog/article-1.jpg"
+            srcset="./images/blog/article-1@2x.jpg 2x" 
+            width="290" height="256" 
+            alt="Neatly arranged jewelry.">
+          </picture>
+          <div class="article__about">
+            <time class="article__time" datetime="2019-09-30">September 30, 2019</time>
+            <h3 class="article__title">How to care for your jewellery</h3>
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">Read Article</a>
+          </div>
+        </article>
+      </li>
+
+      <li class="blog__item">
+        <article class="article">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/blog/article-2--desktop.webp, ./images/blog/article-2--desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 767px)" srcset="./images/blog/article-2--tablet.webp, ./images/blog/article-2--tablet@2x.webp 2x" type="image/webp">
+            <source srcset="./images/blog/article-2.webp, ./images/blog/article-2@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/blog/article-2--desktop.jpg, ./images/blog/article-2--desktop@2x.jpg 2x">
+            <source media="(min-width: 767px)" srcset="./images/blog/article-2--tablet.jpg, ./images/blog/article-2--tablet@2x.jpg 2x">
+            <img class="article__image" loading="lazy" src="./images/blog/article-2.jpg"
+              srcset="./images/blog/article-2@2x.jpg 2x" width="290" height="256"
+              alt="Orange crystals with a metallic outline.">
+          </picture>
+          <div class="article__about">
+            <time class="article__time" datetime="2019-09-23">September 23, 2019</time>
+            <h3 class="article__title">Power of crystals</h3>
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">Read Article</a>
+          </div>
+        </article>
+      </li>
+
+      <li class="blog__item">
+        <article class="article">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/blog/article-3--desktop.webp, ./images/blog/article-3--desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 767px)" srcset="./images/blog/article-3--tablet.webp, ./images/blog/article-3--tablet@2x.webp 2x" type="image/webp">
+            <source srcset="./images/blog/article-2.webp, ./images/blog/article-3@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/blog/article-3--desktop.jpg, ./images/blog/article-3--desktop@2x.jpg 2x">
+            <source media="(min-width: 767px)" srcset="./images/blog/article-3--tablet.jpg, ./images/blog/article-3--tablet@2x.jpg 2x">
+            <img class="article__image" loading="lazy" src="./images/blog/article-3.jpg"
+              srcset="./images/blog/article-3@2x.jpg 2x" width="290" height="256" alt="A girl with two trendy rings.">
+          </picture>
+          <div class="article__about">
+            <time class="article__time" datetime="2019-09-16">September 16, 2019</time>
+            <h3 class="article__title">AW 19 trends</h3>
+            <a class="link" href="#" target="_blank" rel="noopener noreferrer">Read Article</a>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+    <!-- Q&A -->
+    <section class="question">
+  <div class="question__container">
+    <h2 class="question__title title">Frequently asked questions</h2>
+    <ul class="question__list" title="List of questions.">
+      <li class="question__item">
+        <input class="question__input visually-hidden" type="checkbox" id="question-1" name="questions" aria-label="Check the answer.">
+        <label class="question__label" for="question-1">What materials are the jewellery made of?</label>
+        <span class="question__decoration"></span>
+        <p class="question__answer">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
+          contains precious and semiprecious stones and crystals.
+        </p>
+      </li>
+      <li class="question__item">
+        <input class="question__input visually-hidden" type="checkbox" id="question-2" name="questions" aria-label="Check the answer.">
+        <label class="question__label" for="question-2">Which countries do you deliver to?</label>
+        <span class="question__decoration"></span>
+        <p class="question__answer">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
+          contains precious and semiprecious stones and crystals.
+        </p>
+      </li>
+      <li class="question__item">
+        <input class="question__input visually-hidden" type="checkbox" id="question-3" name="questions" aria-label="Check the answer.">
+        <label class="question__label" for="question-3">What are the payment methods?</label>
+        <span class="question__decoration"></span>
+        <p class="question__answer">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
+          contains precious and semiprecious stones and crystals.
+        </p>
+      </li>
+      <li class="question__item">
+        <input class="question__input visually-hidden" type="checkbox" id="question-4" name="questions" aria-label="Check the answer.">
+        <label class="question__label" for="question-4">Can I return the jewellery if it didn’t fit me?</label>
+        <span class="question__decoration"></span>
+        <p class="question__answer">Our jewellerry is made of solid gold, silver or leather. Also, some jewellery
+          contains precious and semiprecious stones and crystals.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+    <!-- Follow Us -->
+    <section class="follow">
+  <div class="follow__container">
+    <div class="follow__header">
+      <h2 class="follow__title title">@Chjewellery</h2>
+      <a class="link" href="#" target="_blank" rel="noopener">Follow Us</a>
+    </div>
+    <ul class="follow__posts">
+      <li class="follow__post">
+        <a class="follow__link" href="#" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/follow/earrings--desktop.webp, ./images/follow/earrings--desktop@2x.webp 2x" type="image/webp">
+            <source srcset="./images/follow/earrings.webp, ./images/follow/earrings@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/follow/earrings--desktop.jpg, ./images/follow/earrings--desktop@2x.jpg 2x">
+            <img loading="lazy" 
+            src="./images/follow/earrings.jpg" 
+            srcset="./images/follow/earrings@2x.jpg 2x"
+            class="follow__image" 
+            width="133" height="133" 
+            alt="Post #2 - Top trend earrings.">
+          </picture>
+        </a>
+      </li>
+
+      <li class="follow__post">
+        <a class="follow__link" href="#" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/follow/stones--desktop.webp, ./images/follow/stones--desktop@2x.webp 2x" type="image/webp">
+            <source srcset="./images/follow/stones.webp, ./images/follow/stones@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/follow/stones--desktop.jpg, ./images/follow/stones--desktop@2x.jpg 2x">
+            <img loading="lazy" 
+            src="./images/follow/stones.jpg" 
+            srcset="./images/follow/stones@2x.jpg 2x"
+            class="follow__image" 
+            width="133" height="87" 
+            alt="Post #12 - Handmade Stones!">
+          </picture>
+        </a>
+      </li>
+
+      <li class="follow__post">
+        <a class="follow__link" href="#" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/follow/woman--desktop.webp, ./images/follow/woman--desktop@2x.webp" type="image/webp">
+            <source media="(min-width: 767px)" srcset="./images/follow/woman--tablet.webp, ./images/follow/woman--tablet@2x.webp" type="image/webp">
+            <source srcset="./images/follow/woman.webp, ./images/follow/woman@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/follow/woman--desktop.jpg, ./images/follow/woman--desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="./images/follow/woman--tablet.jpg, ./images/follow/woman--tablet@2x.jpg">
+            <img loading="lazy" 
+            src="./images/follow/woman.jpg" 
+            srcset="./images/follow/woman@2x.jpg 2x"
+            class="follow__image" 
+            width="133" height="247" 
+            alt="Post #7 - Clear skin is important for woman.">
+          </picture>
+        </a>
+      </li>
+
+      <li class="follow__post">
+        <a class="follow__link" href="#" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/follow/rings--desktop.webp, ./images/follow/rings--desktop@2x.webp 2x" type="image/webp">
+            <source srcset="./images/follow/rings.webp, ./images/follow/rings@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/follow/rings--desktop.jpg, ./images/follow/rings--desktop@2x.jpg 2x">
+            <img loading="lazy" 
+            src="./images/follow/rings.jpg" 
+            srcset="./images/follow/rings@2x.jpg 2x"
+            class="follow__image" 
+            width="133" height="87" 
+            alt="Post #8 - Rings not only for weadings!">
+          </picture>
+        </a>
+      </li>
+
+      <li class="follow__post">
+        <a class="follow__link" href="#" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/follow/hands--desktop.webp, ./images/follow/hands--desktop@2x.webp 2x" type="image/webp">
+            <source srcset="./images/follow/hands.webp, ./images/follow/hands@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/follow/hands--desktop.jpg, ./images/follow/hands--desktop@2x.jpg 2x">
+            <img loading="lazy" 
+            src="./images/follow/hands.jpg" 
+            srcset="./images/follow/hands@2x.jpg 2x"
+            class="follow__image" 
+            width="133" height="87" 
+            alt="Post #91 - Soft hands of mowan.">
+          </picture>
+        </a>
+      </li>
+
+      <li class="follow__post">
+        <a  class="follow__link" href="#" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/follow/hands-2--desktop.webp, ./images/follow/hands-2--desktop@2x.webp 2x" type="image/webp">
+            <source srcset="./images/follow/hands-2.webp, ./images/follow/hands-2@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/follow/hands-2--desktop.jpg, ./images/follow/hands-2--desktop@2x.jpg 2x">
+            <img loading="lazy" 
+            src="./images/follow/hands-2.jpg" 
+            srcset="./images/follow/hands-2@2x.jpg 2x"
+            class="follow__image" 
+            width="133" height="133" 
+            alt="Post #25 - Cozy sweater.">
+          </picture>
+        </a>
+      </li>
+
+      <li class="follow__post">
+        <a class="follow__link" href="#" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="./images/follow/rings-2--desktop.webp, ./images/follow/rings-2--desktop@2x.webp 2x" type="image/webp">
+            <source srcset="./images/follow/rings-2.webp, ./images/follow/rings-2@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1360px)" srcset="./images/follow/rings-2--desktop.jpg, ./images/follow/rings-2--desktop@2x.jpg 2x">
+            <img loading="lazy" 
+            src="./images/follow/rings-2.jpg" 
+            srcset="./images/follow/rings-2@2x.jpg 2x"
+            class="follow__image" 
+            width="133" height="133" 
+            alt="Post #122 - Weading rings.">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer__container">
+    <!-- Inbox -->
+    <div class="footer__inbox inbox">
+      <h2 class="inbox__title">The good stuff in your inbox </h2>
+      <p class="inbox__description">News and updates from CH. No spam, we promise.</p>
+      <div class="inbox__email">
+        <input class="inbox__input" type="email" name="email" placeholder="Your E-mail"
+          aria-label="Enter your email address.">
+        <button class="inbox__button" type="button">Sign Up
+          <svg class="inbox__icon" width="30" height="11" viewBox="0 0 30 11" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="currentColor" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Details -->
+    <ul class="details">
+      <li>
+        <a class="details__link" href="./details.html" target="_blank" rel="noopener noreferrer">Ordering &
+          Payment</a>
+      </li>
+      <li>
+        <a class="details__link" href="./details.html" target="_blank" rel="noopener noreferrer">Terms &
+          Conditions</a>
+      </li>
+      <li>
+        <a class="details__link" href="./details.html" target="_blank" rel="noopener noreferrer">Returns &
+          Exchanges</a>
+      </li>
+      <li>
+        <a class="details__link" href="./details.html" target="_blank" rel="noopener noreferrer">Delivery</a>
+      </li>
+    </ul>
+    <!-- About Information -->
+    <ul class="about">
+      <li>
+        <a class="about__link" href="./about.html" target="_blank" rel="noopener noreferrer">About CH</a>
+      </li>
+      <li>
+        <a class="about__link" href="./about.html" target="_blank" rel="noopener noreferrer">Stores & Hours</a>
+      </li>
+      <li>
+        <a class="about__link" href="./about.html" target="_blank" rel="noopener noreferrer">Jobs</a>
+      </li>
+      <li>
+        <a class="about__link" href="./about.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+      </li>
+    </ul>
+    <!-- Socials -->
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#facebook" aria-label="Our company in facebook." target="_blank"
+          rel="noopener noreferrer">
+          <svg class="social__icon" aria-hidden="true" focusable="false">
+            <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+          </svg>
+          <span class="social__name">Facebook</span>
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link" href="#instagram" aria-label="Our company in instagram." target="_blank"
+          rel="noopener noreferrer">
+          <svg class="social__icon" aria-hidden="true" focusable="false">
+            <use xlink:href="images/sprite/sprite.svg#instagram"></use>
+          </svg>
+          <span class="social__name">Instagram</span>
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link" href="#pinterest" aria-label="Our company in pinterest." target="_blank"
+          rel="noopener noreferrer">
+          <svg class="social__icon" aria-hidden="true" focusable="false">
+            <use xlink:href="images/sprite/sprite.svg#pinterest"></use>
+          </svg>
+          <span class="social__name">Pinterest</span>
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link" href="#twitter" aria-label="Our company in twitter." target="_blank"
+          rel="noopener noreferrer">
+          <svg class="social__icon" aria-hidden="true" focusable="false">
+            <use xlink:href="images/sprite/sprite.svg#twitter"></use>
+          </svg>
+          <span class="social__name">Twitter</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</footer>
+</body>
+
+</html>
